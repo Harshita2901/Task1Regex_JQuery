@@ -1,0 +1,34 @@
+div#gallery {
+	width:250px;
+	float:left;
+}
+div#gallery img {
+	width:100px;
+	margin:10px;
+}
+div#full-size {
+	float:left;
+	width:500px;
+	height:400px;
+	margin:10px;
+	background-size:contain;
+}
+
+div.display {
+	background: url('images/watch1.jpg') no-repeat left top;
+}
+div.strap {
+	background: url('images/watch2.jpg') no-repeat left top;
+}
+div.back {
+	background: url('images/watch3.jpg') no-repeat left top;
+}
+div.full {
+	background: url('images/watch4.jpg') no-repeat left top;
+}
+div.noise_band {
+	background: url('images/watch5.jpg') no-repeat left top;
+}
+div.with_phone {
+	background: url('images/watch6.jpg') no-repeat left top;
+}
