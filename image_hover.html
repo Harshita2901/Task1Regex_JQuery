@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Image Hover - JQuery </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/image_hover.css">	
+	<script>
+	    $(document).ready(function(){
+            $("img").hover(function() {
+                $(this).stop().animate({"opacity": "0.5"}, "slow");
+            },function() {
+                $(this).stop().animate({"opacity": "2.0"}, "slow");
+            });
+        });
+	</script>
+</head>
+<body>
+    <table border='0' width='50%' cellspacing='8' cellpadding='5%'>
+	<tr>
+	<td><img class="full" src="images/backgroundflower.jpg" width="300" alt=""> <span> </span> </img></td>
+	<td><img class="full" src="images/backgroundflower.jpg" width="300" ></img></td>
+	<td><img class="full" src="images/backgroundflower.jpg" width="300" ></img></td>
+	<td><img class="full" src="images/backgroundflower.jpg" width="300" ></img></td>
+	</tr>
+	
+	<tr>
+	<th align="left"> Flower For You</th>
+	<th align="left"> Flower For You</th>
+	<th align="left"> Flower For You</th>
+	<th align="left"> Flower For You</th>
+	</tr>
+	
+	<tr>
+	<td align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+	<td align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+	<td align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+	<td align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+	</tr>
+	
+</body>
+</html>

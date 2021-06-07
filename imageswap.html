@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Image Swap - JQuery </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/imageswap.css">	
+	<script>
+	    $(document).ready(function(){
+		    $("img").click(function(e) {
+			    var newclass = $(this).attr("id");
+				var oldclass = $("#full-size").attr('class');
+				$("#full-size").fadeOut(function() {
+				    $("#full-size").removeClass(oldclass).addClass(newclass).fadeIn('slow');
+				})
+			})
+		});
+	</script>
+</head>
+<body>
+   <div id="gallery">
+        <img id="display" src="images/thumbnails/tnwatch1.jpg" alt=" Watch Display">
+        <img id="strap" src="images/thumbnails/tnwatch2.jpg" alt=" Watch Strap">
+        <img id="back" src="images/thumbnails/tnwatch3.jpg" alt=" Watch Back">
+        <img id="full" src="images/thumbnails/tnwatch4.jpg" alt=" Watch Full">
+        <img id="noise_band" src="images/thumbnails/tnwatch5.jpg" alt=" Watch Band">
+        <img id="with_phone" src="images/thumbnails/tnwatch6.jpg" alt=" Watch Phone">
+	</div>
+	<div id="full-size" class="display">
+	    &nbsp;
+	</div>
+	
+</body>
+</html>
